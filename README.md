@@ -1,6 +1,11 @@
 # Gladys MQTT
 
-This module connect Gladys to a MQTT broker, in order to support [Owntrack](http://owntracks.org/), an open-source (and awesome) location tracker.
+This module connect Gladys to a MQTT broker.
+It ca be used to support:
+
+	- [Owntrack](http://owntracks.org/), an open-source (and awesome) location tracker.
+	- Sonoff wireless relays
+	- Roomba robot
 
 Need Gladys version >= 3.0.0.
 
