@@ -1,6 +1,11 @@
 # Gladys MQTT
 
-This module connect Gladys to a MQTT broker, in order to support [Owntrack](http://owntracks.org/), an open-source (and awesome) location tracker.
+This module connect Gladys to a MQTT broker.
+It ca be used to support:
+
+	- [Owntrack](http://owntracks.org/), an open-source (and awesome) location tracker.
+	- Sonoff wireless relays
+	- Roomba robot
 
 Need Gladys version >= 3.0.0.
 
@@ -10,7 +15,7 @@ To make this module work in Gladys, you need to :
 
 - First, install the module
 - Without rebooting, just set three global parameters in "Param" view in the dashboard : 
-	- MQTT_URL => The URL of the MQTT broker, for example : "mqtt://xxxx.cloudmqtt.com:19692"
+	- MQTT_URL => The URL of the MQTT broker, for example : "mqtts://xxxx.cloudmqtt.com:SSL_PORT"
 	- MQTT_USERNAME	=> The username to connect to the MQTT broker
 	- MQTT_PASSWORD => The password of the MQTT user
 - Reboot Gladys. In the logs you should see "Successfully connected to MQTT : YOUR_SERVER_URL" 
@@ -51,7 +56,7 @@ In `Preferences`, go to `Connection`:
 - `Mode` => "Private MQTT",
 - `Host` => 
 	- `Host` = xxxx.cloudmqtt.com
-	- `Port` = SSL PORT (be careful, that's not the same port as before)
+	- `Port` = SSL PORT
 - `Identification` => 
 	- `Username` => MQTTT username
 	- `Password` => MQTT Password
